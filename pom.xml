@@ -16,6 +16,7 @@
         <maven.compile.target>1.8</maven.compile.target>
         <maven.surefire.plugin>2.18.1</maven.surefire.plugin>
         <!-- JACOCO (SONAR) -->
+        <jacoco.outputDir>${basedir}/target/</jacoco.outputDir>
         <jacoco.version>0.7.9</jacoco.version>
     </properties>
     <build>
