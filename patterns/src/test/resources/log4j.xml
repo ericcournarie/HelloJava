@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>
+    <appender name="Console" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p [%11.11t] %20.20C{1}:%-4L - %m%n"/>
+        </layout>
+    </appender>
+    <logger name="org.cournarie" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="Console"/>
+    </logger>
+    <root>
+        <priority value="fatal"></priority>
+        <appender-ref ref="Console"/>
+    </root>
+</log4j:configuration>
