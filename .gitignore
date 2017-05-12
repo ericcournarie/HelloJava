@@ -1,2 +1,2 @@
-samples/target/
-patterns/target/
+**/target/
+*/nbactions.xml
